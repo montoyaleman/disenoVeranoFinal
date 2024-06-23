@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articulo HTML</title>
+    <!-- tipografia-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
+    <!-- codigo css-->
+    <link rel="stylesheet" href="/css/articulo.css">
+</head>
+
+<body>
+    <main>
+        <article>
+            <header class="cabezera">
+                <h1>Distribuciones de Linux</h1>
+                <h2 id="subtitulo">El mundo de sistemas operativos personalizados</h2>
+            </header>
+            <section class="quees">
+                <hr>
+                <h2>Que es Linux?</h2>
+                <p>GNU es un sistema operativo de tipo Unix, lo cual significa que se trata de una colección de muchos programas: aplicaciones, bibliotecas, herramientas de desarrollo y hasta juegos. El desarrollo de GNU, iniciado en enero de 1984, se conoce como Proyecto GNU. Muchos de los programas de GNU se publican bajo el auspicio del Proyecto GNU y los llamamos paquetes de GNU.</p>
+                <p>El nombre GNU es un acrónimo recursivo de "GNU No es Unix". GNU se pronuncia en inglés como una sílaba sin vocal entre la g y la n. En español se puede pronunciar de la misma manera, o bien reemplazando gn por una ñ, como en ñu. También es aceptable en español la pronunciación de cada una de las letras por separado: G-N-U (ge-ene-u)</p> 
+                <p>En un sistema de tipo Unix, el programa que asigna los recursos de la máquina y se comunica con el hardware se denomina kernel (o núcleo). GNU se usa generalmente con un kernel llamado Linux. Esta combinación es el sistema operativo GNU/Linux. Millones de personas usan GNU/Linux, aunque muchos lo llaman erróneamente Linux.</p>
+            </section>
+            <section class="instalacion">
+                <div id="instalacionPaso0">
+                <hr>
+                <h2>Instalacion</h2>
+                <p>Aunque haya muchas distribuciones de linux, la mayoria de ellas se pueden instalar muy similar a los demas.</p>
+                <p>Para instalar linux, se necesita las siguientes cosas:</p>
+                <ul>
+                    <strong>
+                    <li><b>Una USB (Recomendado 8 o 16gbs)</b></li>
+                    <li><b>El archivo ISO de la distribucion que desea instalar</b></li>
+                    <li><b>Un software de creacion de USBs Liveboot</b> (En este caso, utilizaremos Balenaetcher)</li>
+                    </strong>
+                </ul>
+                <p>Para este tutorial, utilizaremos Linux Mint como la distribucion que queremos instalar en nuestro sistema.</p>
+                </div>
+                <div id="instalacionPaso1">
+                    <img class="imagen" src="../img/articulo/Screenshot 2024-05-04 at 15-48-24 Home - Linux Mint.png" alt="" id="imgSitioMint">
+                    <h3>Paso 1: Obtener el ISO</h3>
+                    
+                    <ol>
+                        <li>Ir a la pagina oficial de Linux Mint (linuxmint.com) y entrar a la pagina de Descargar</li>
+                        <li>Escoger el entorno grafico que desea (Para mas detalles, describo la diferencias entre las 3 en la pagina de Caracteristicas de este sitio web)</li>
+                        <li>Escoger uno de los links de descargar disponibles al pie de la pagina. Tambien hay archivos torrent si son necesisarios.</li>
+                        <li>Instalar una herramienta para instalar  archivos .iso (Como el de Linux Mint) a una memoria USB (Yo recomendaria BalenaEtcher)</li>
+                    </ol>
+                    <button onclick="window.location.href='https://www.linuxmint.com/';">Sitio Official de Linux Mint</button>
+                </div>
+                <div id="instalacionPaso2">
+                    <img class="imagen" src="../img/articulo/Etcher_1.4.9_running_on_Windows_10.png" alt="">
+                    <h3>Paso 2: Instalar el ISO en una USB</h3>
+                    
+                    <p>Para instalar linux en una computadora, necesitamos poner el iso que descargamos en una memoria USB. Hay varias herramientas para hacer esto pero yo recomendaria <b>Balenaetcher</b></p>
+                    <p>El proceso de instalar Mint en una USB es muy facil con BalenaEtcher.</p>            
+                    <ol>
+                        <li>Se escoger el archivo .iso de mint</li>
+                        <li>Se escoge el dispositivo USB en donde se va a instalar mint</li>
+                        <li>Se comfirma la accion</li>
+                    </ol>
+                    <a href="https:etcher.balena.io/"><button>Sitio Official de Balena Etcher</button></a>
+                    <p>El proceso puede tomar varios minutos, dependiendo en la velocidad de la Memoria USB y la computadora que esta corriendo la aplicacion.</p>
+                </div>
+                <div id="instalacionPaso3">
+                    <h3>Paso 3: Correr la USB en la computadora</h3>
+                    <p>Se tiene que primero que todo apagar la computadora donde se quiere instalar Linux Mint y conectar la USB a uno de los pueros USB de la computadora.</p>
+                    <p>Despues de tiene que entrar al BIOS de la computadora. El BIOS se puede explicar como una pantalla de configuracion del hardware directamente de la tarjeta madre. Para entrar el BIOS se tiene presionar una tecla (Cual tecla depende en el vendedor de la computadora o tarjeta madre, normalmente puede ser la tecla F12 o de punto (".") ) al momento de prender la computadora.</p>
+                    <p>Su BIOS puede parecer diferente a este, pero todos tienen los mismos apartados.</p>
+                    
+                    <p>En su BIOS tiene que buscar el apartado que mencione "Boot" o algo parecido. Normalmente cuando usted encuentra esta opcion, por default, va a decir que bootea la computadora desde el disco duro instalado. Esto se tiene que cambias a Dispositivos Retirables (Como USBs)</p>
+                    <p>Cuando se cambie esta opcion, se tiene que guardar los cambios y salir del BIOS.</p>
+                </div>
+                <div id="instalacionPaso4">
+                    <img class="imagen" src="../img/articulo/Linux_Mint_20.3_Cinnamon_eng.png" alt="" id="imgMintDesktop">
+                    <h3>Paso 4: Corriendo la distro por primera vez</h3>
+                    
+                    <p>Este paso puede depender en el distro que se escogio para instalar, pero la mayoria siguen una orden similar para facilitar la instalacion para usuarios.</p>
+                    <p>En el caso de Mint, se tiene que hacer los siguientes pasos:</p>
+                    <ol>
+                        <li>Escoger la opcion de "Start Mint" cuando aparesca el menu al correr la computadora</li>
+                        <li>Despues de llegar al escritorio del sistema, escoja la opcion de "Instalar Linux Mint"</li>
+                        <li>Escoger el idioma que quiere utilizar en el sistema</li>
+                        <li>Escoger formato de teclado</li>
+                        <li>Escoger si quieres descargar los archivos necesarios para reproducir varios tipos de archivos multimedia (Videos, imegenes, audio, etc)</li>
+                        <li>Escoger cual es el disco duro donde se va a instalar mint</li>
+                        <li>Escoger zona de tiempo</li>
+                        <li>Escribir el nombre de usuario y contraseña que usted desea</li>
+                    </ol>
+    
+                    <div id="instalacionPaso3">
+                    <p>Despues de comfirma todo esto, se va comenzar la instalacion completa de mint a su sistema.</p>
+                    <p>Esto puede tomar un tiempo, y depende mucho en la velocidad de la Memoria USB en donde usted instalo Mint y la velocidad de la computadora misma que esta corriendo la USB</p>
+                    <p>Despues de terminar la instalacion, se le va a preguntar al usuario que reinicie la computadora y cuando prenda la computadora otra vez, ya tendra Linux Mint instalado en su sistema.</p>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <hr>    
+                <h5>Sebastian Montoya Aleman - 218008</h5>
+                <time datetime="2024-06-18">18 de Junio del 2024</time>
+            </footer>
+        </article>
+    </main>
+
+</body>
+<h6><a href="../index.html">Regresar a Index</a></h6>
+</html>

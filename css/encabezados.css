@@ -1,0 +1,42 @@
+/* documento css */
+* {
+    font-size: 18px;
+}
+
+
+body {
+    background: aquamarine;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+h1, h3, h6 {color:red;}
+h2 {color: blue;}
+h4 {color:violet}
+h5 {color: blueviolet;}
+
+h1{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5cm;
+    text-transform: uppercase;
+}
+
+.warning{
+    color: blueviolet;
+}
+
+.imagen{
+    float: right;
+    margin-right: 35px;
+    margin-left: 35px;
+    margin-bottom: 15px;
+}
+
+.contenido{
+    font-weight: 900;
+    line-height: 1.5;
+    border-bottom: 30px double red;
+}

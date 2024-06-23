@@ -1,0 +1,49 @@
+*{
+    font-size: 16px;
+    margin-right: 35px;
+    margin-left: 35px;
+}
+
+body {
+    background: whitesmoke;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2{
+    font-weight: 400;
+}
+
+ol{
+    color: crimson
+
+}
+
+ul {
+    color: blueviolet;
+}
+
+dl{
+    color: forestgreen
+}
+
+.importante{
+    font-size: 16px;
+    font-weight: bold;
+    color: brown;
+}
+
+.frase{
+    font-size: medium;
+    font-style: italic;
+    color: steelblue;
+}
+.contenido{
+    line-height: 1.5;
+    border-bottom: 15px solid purple;
+}
